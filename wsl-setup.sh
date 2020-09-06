@@ -12,10 +12,10 @@ sudo apt-get upgrade -y
 
 ## Install python3
 echo "-----------------------------------Installing python3-"
-sudo apt-get install python3
+sudo apt-get install python3 -y
 
 echo "-----------------------------------Installing pip3-"
-sudo apt-get install python3-pip
+sudo apt-get install python3-pip -y
 
 ## Add custom bashrc aliases and scripts
 
@@ -50,12 +50,12 @@ echo "---------------------------------------------------------------------"
 echo "-----------------------------------Installing powerline fonts on linux-"
 echo "----------------------------------------------------------------------"
 
-sudo apt-get install fonts-powerline
+sudo apt-get install fonts-powerline -y
 
 echo "-------(you might need to do some additional config on the windows side, check docs)-"
 
 echo "-----------------------------------Installing powerline shell on linux-"
-sudo pip3 install powerline-shell
+sudo pip3 install powerline-shell -y
 
 cd ~
 
