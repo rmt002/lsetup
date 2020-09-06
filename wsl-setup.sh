@@ -5,21 +5,23 @@ exec 2> >(while read -r line; do printf '%s %s\n' "$(date --rfc-3339=seconds)" "
 
 ## Update and upgrade the OS
 echo "-----------------------------------Updating apt-"
-sudo apt update -y
+sudo apt-get update -y
 
 echo "-----------------------------------Upgrading apt-"
-sudo apt upgrade -y
+sudo apt-get upgrade -y
 
 ## Install python3
 echo "-----------------------------------Installing python3-"
-sudo apt install python3
+sudo apt-get install python3
 
 echo "-----------------------------------Installing pip3-"
-sudo apt install pip3
+sudo apt-get install python3-pip
 
 ## Add custom bashrc aliases and scripts
 
 cd ~
+echo "------------------------------------Backing up bashrc"
+cp .bashrc backbashrc.txt
 echo "-----------------------------------Updating bashrc with aliases-"
 echo "#-------------------Custom aliases" >> .bashrc
 
@@ -48,7 +50,7 @@ echo "---------------------------------------------------------------------"
 echo "-----------------------------------Installing powerline fonts on linux-"
 echo "----------------------------------------------------------------------"
 
-sudo apt install font-powerline
+sudo apt-get install fonts-powerline
 
 echo "-------(you might need to do some additional config on the windows side, check docs)-"
 
