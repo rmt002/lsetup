@@ -15,7 +15,7 @@ echo "-----------------------------------Installing python3-"
 sudo apt-get install python3 -y
 
 echo "-----------------------------------Installing pip3-"
-sudo apt-get install python3-pip -y
+sudo apt-get install python3-pip
 
 ## Add custom bashrc aliases and scripts
 
